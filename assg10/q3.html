@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+	<style>
+	body{
+		font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+	}
+	.products{
+		max-width: 1200px;
+        margin: 0 auto;
+	}
+	.products h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+	.container {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+	.card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        flex: 1;
+    }
+	.card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+	.add {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+    }
+	
+	</style>
+</head>
+<body>
+    <div class="products">
+        <h1>The Ultimate Shoe Corner</h1>
+        <div class="container">
+            <div class="card">
+                <img src="shoe1.avif" alt="Product 1">
+                <h3>Cirque-Slip-On-Women's-Shoes</h3>
+                <p>$25.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="shoe2.avif" alt="Product 2">
+                <h3>Chuck 70 Premium Leather</h3>
+                <p>$40.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="shoe3.jpg" alt="Product 3">
+                <h3>Ajile White Assorted - Others Casual Men Sneakers Size EU-40</h3>
+                <p>$15.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="shoe4.avif" alt="Product 4">
+                <h3>Cricket Square Men's Shoes</h3>
+                <p>$55.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+			<div class="card">
+                <img src="https://media-ea.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000015337827-Green-OLIVEGREEN-1000015337827_01-2100.jpg" alt="Product 4">
+                <h3>Men Colourblocked Sneakers</h3>
+                <p>$55.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+			<div class="card">
+                <img src="https://th.bing.com/th?id=OPAC.kaWTSnX%2fqvT81A474C474&w=592&h=550&o=5&pid=21.1" alt="Product 4">
+                <h3>ADIDAS Men Trois New Running Shoes</h3>
+                <p>$55.00</p>
+                <button class="add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
