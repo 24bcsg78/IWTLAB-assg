@@ -1,13 +1,29 @@
+<html>
 <head>
-<title>abc</title>
-<script>
-var r=6,a,c;
-a=3.141*r*r;
-c=2*3.141*r;
-document.write("area of circle="+a+"<br>");
-document.write("circumference of circle="+c);
+<title>Assignment11_q5</title>
+<script language="JavaScript">
+ let arr = [12, 45, 7, 89, 23, 56];
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) 
+	{
+        if (arr[i] > largest)
+		{
+            secondLargest = largest;
+            largest = arr[i];
+        } 
+		else if (arr[i] > secondLargest && arr[i] < largest) 
+		{
+            secondLargest = arr[i];
+        }
+    }
+    console.log("Array elements: " + arr+"  ");
+    console.log("Largest = " + largest+"  ");
+    console.log("Second Largest = " + secondLargest);
 </script>
 </head>
-<body bgcolor="pink" text="violet">
+<body bgcolor="white" text="brown">
+<h3></h3>
 </body>
 </html>

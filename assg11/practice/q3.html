@@ -1,11 +1,24 @@
 <html>
 <head>
-<title>abc</title>
-<script>
-var a=5, b=4, c;
-c = a+b;
-document.write("Addition value = "+c);
-</script>
-<body bgcolor="pink" text="violet">
+    <title>Assignment11_q3</title>
+</head>
+<body>
+<h3>Write a program using for while loop to reverse digits of a number and check if the number is a palindrome or not.</h3>
+    <script>
+		let num = prompt("Enter a number");
+		let rev = 0;
+		let temp = num;
+		while (temp>0){
+			let rem = temp%10;
+			rev = rev*10 + rem;
+			temp = Math.floor(temp/10);
+		}
+		if (rev === num){
+			document.write(num+" is a palindrome number.");
+		}
+		else{
+			document.write(num+" is not a palindrome number.");
+		}
+    </script>
 </body>
 </html>
