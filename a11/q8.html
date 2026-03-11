@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Assignment11_q8</title>
+</head>
+<body>
+<h4>Write a function isPrime(num) that returns true if the number is prime, otherwise false. Test with different numbers.</h4>
+    <script>
+        function isPrime(num) {
+            if (num < 2) {
+                return false;
+            }
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false; 
+                }
+            }
+            return true;
+        }
+		document.write("Is 7 prime? " + isPrime(7) + "<br>");
+        document.write("Is 10 prime? " + isPrime(10) + "<br>");
+        document.write("Is 13 prime? " + isPrime(13) + "<br>");
+        document.write("Is 1 prime? " + isPrime(1) + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Assignment11_q6</title>
+</head>
+<body>
+<h4>Write a program to remove duplicate elements from an array and print new array.</h4>
+    <script>
+        var arr = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7];
+		var uniqueArr = arr.filter((item, index) => arr.indexOf(item) === index);
+		document.write("Original Array: " + arr + "<br>");
+        document.write("New Array: " + uniqueArr );
+    </script>
+</body>
+</html>

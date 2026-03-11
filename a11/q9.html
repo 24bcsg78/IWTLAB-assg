@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Assignment11_q9</title>
+</head>
+<body>
+<h4>Write a function to check whether a number is an Armstrong number (e.g., 153 Armstrong, 123 not Armstrong).</h4>
+    <script>
+        var num = 153;
+        var temp = num;
+        var sum = 0;
+        var digits = num.toString().length; 
+
+        while (temp > 0) {
+            var rem = temp % 10;
+            sum += Math.pow(rem, digits);
+            temp = parseInt(temp / 10);
+        }
+
+        document.write("Number: " + num + "<br>");
+        if (sum == num) {
+            document.write("It is an Armstrong number");
+        } else {
+            document.write("It is NOT an Armstrong number");
+        }
+    </script>
+</body>
+</html>

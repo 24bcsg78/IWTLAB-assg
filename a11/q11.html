@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Assignment11_q11</title>
+</head>
+<body>
+<h4>Write a function reverseArray(arr) that reverses the elements of an array without using the built-in reverse() method.</h4>
+    <script>
+        var originalArr =[12, 15, 8, 21, 44, 3, 10];
+        var reversedArr = [];
+
+        for (var i = originalArr.length - 1; i >= 0; i--) {
+            reversedArr.push(originalArr[i]);
+        }
+        document.write("Original:" + originalArr + "<br>");
+        document.write("Reversed: " + reversedArr);
+    </script>
+</body>
+</html>

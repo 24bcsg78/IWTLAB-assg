@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Assignment11_q7</title>
+</head>
+<body>
+<h4>Write a program to count how many times each element occurs in an array.</h4>
+    <script>
+		var arr = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7];
+		var count = {};
+        for (let i = 0; i < arr.length; i++) {
+			let x = arr[i];
+			if (count[x]) {
+				count[x] += 1;
+			} else {
+				count[x] = 1;
+			}
+		}
+
+		document.write("Array elements: " + arr+"</br>");
+		document.write("Frequency of each element:<br>");
+		for (let c in count) {
+			document.write(c + " occurs " + count[c] + " times <br>");
+		}
+
+    </script>
+</body>
+</html>

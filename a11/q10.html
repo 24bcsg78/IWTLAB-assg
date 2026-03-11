@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Assignment11_q10</title>
+</head>
+<body>
+<h4>Write a function that takes an array of numbers and returns two new arrays: one containing even numbers and one containing odd numbers.</h4>
+    <script>
+        var numbers = [12, 15, 8, 21, 44, 3, 10];
+        var evenArr = [];
+        var oddArr = [];
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evenArr.push(numbers[i]);
+            } else {
+                oddArr.push(numbers[i]);
+            }
+        }
+        document.write("Original Array: " + numbers + "<br><br>");
+        document.write("Even Numbers: " + evenArr + "<br>");
+        document.write("Odd Numbers: " + oddArr + "<br>");
+    </script>
+</body>
+</html>

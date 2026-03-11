@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Assignment11_q12</title>
+</head>
+<body>
+<h4>Write a function generateFibonacci(n) that generates the first n Fibonacci numbers and returns them in an array.</h4>
+    <script>
+        var n = 10; 
+        var fibo = [0, 1]; 
+        for (var i = 2; i < n; i++) {
+            fibo[i] = fibo[i - 1] + fibo[i - 2];
+        }
+        document.write("First " + n + " Fibonacci numbers: <br>");
+        document.write(fibo.join(", "));
+    </script>
+</body>
+</html>
