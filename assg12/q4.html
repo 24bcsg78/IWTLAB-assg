@@ -1,0 +1,28 @@
+<!-- Create a simple counter with an input box and two buttons: + and -. + increases the value by 1. - decreases the value by 1 
+(not below 0). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>COUNTER</title>
+</head>
+<body>
+<input type="number" id="counter" value="0" readonly>
+<button onclick="updateCounter(1)">+</button>
+<button onclick="updateCounter(-1)">-</button>
+
+<script>
+  function updateCounter(val) {
+    let input = document.getElementById("counter");
+    let current = parseInt(input.value);
+    let newValue = current + val;
+    
+    if (newValue >= 0) {
+      input.value = newValue;
+    }
+  }
+</script>
+
+
+</body>
+</html>

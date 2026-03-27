@@ -1,0 +1,22 @@
+<!-- Create three buttons: Red, Green, Blue. When a button is clicked, change the background color of a <div> accordingly.
+ Before changing the color, ask confirmation from the user if they really want to change the background color.-->
+<!DOCTYPE html>
+<html>
+<head>
+<div id="colorBox" style="width: 200px; height: 100px; border: 1px solid black;">
+  Color Display Area
+</div>
+<button onclick="changeBg('red')">Red</button>
+<button onclick="changeBg('green')">Green</button>
+<button onclick="changeBg('blue')">Blue</button>
+
+<script>
+  function changeBg(color) {
+    if (confirm("Do you really want to change the background color?")) {
+      document.getElementById("colorBox").style.backgroundColor = color;
+    }
+  }
+</script>
+
+</body>
+</html>
