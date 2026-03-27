@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+  #toggleParagraph {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<p id="toggleParagraph">
+  This is the paragraph of text that can be shown or hidden. It demonstrates the use of JavaScript to dynamically 
+  change the visibility of an HTML element and update button text accordingly.
+</p>
+
+<button id="button" onclick="toggle()">Show Paragraph</button>
+
+<script>
+  function toggle() {
+    var paragraph = document.getElementById("toggleParagraph");
+    var button = document.getElementById("button");
+    
+    if (paragraph.style.display === "none") {
+      paragraph.style.display = "block";
+      button.textContent = "Hide Paragraph";
+    } else {
+      paragraph.style.display = "none";
+      button.textContent = "Show Paragraph";
+    }
+  }
+</script>
+
+</body>
+</html>
